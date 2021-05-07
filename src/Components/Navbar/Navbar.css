@@ -1,0 +1,155 @@
+.Nav{
+    background: #000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top:  0;
+    z-index: 10;
+}
+
+
+.NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.NavLogo{
+    color: white;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.9em;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;;
+}
+
+.fa-car{
+    color: red;
+}
+
+.icon{
+    display: none;
+} 
+.NavMenu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+}
+.fa-bars{
+    color: white;
+}
+.fa-times{
+    color: rgb(221, 202, 178);
+}
+.NavItem{
+    height: 80px ;
+
+}
+.NavLink{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.NavLink:hover{
+    border-bottom: 3px solid tomato;
+}
+.NavBtn{
+    display: flex;
+    align-items: center;
+}
+.NavBtnLink{
+    border-radius: 50px;
+    background: rgb(255, 36, 36) ;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #020505 ;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.NavBtnLink:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #020505;
+
+}
+
+@media  screen and (max-width: 960px) {
+    .Nav{
+        position: relative;
+        transition:0.8s all ease;
+    }
+
+    .NavMenu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 330px;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .NavMenu.active{
+        background: rgb(0, 0, 0);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .NavLink{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .NavLink:hover{
+        background-color: rgb(236, 83, 83);
+        border-radius: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    .NavLogo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%,50%);
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .NavBtn{
+        display: none;
+        
+    }
+}

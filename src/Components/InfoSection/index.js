@@ -4,7 +4,7 @@ import React from 'react'
 export default function Info(){
     return(
         <div>
-            Footer
+            <h1>about</h1>
         </div>
     )
 }
