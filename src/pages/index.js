@@ -19,9 +19,10 @@ import './home.css'
                     towards your next payment.
                </p>
                <nav className="HomeBtnCont">
-            <LinkR to="Plans"  className="BtnLink">
-               Get started &nbsp; <i class="fas fa-arrow-circle-right"></i></LinkR>
-           </nav>
+            <LinkR to="/signUp" className="BtnLink">
+            Get started &nbsp; <i class="fas fa-arrow-circle-right"></i>
+            </LinkR>
+            </nav>
            </div>
           
         </div>
