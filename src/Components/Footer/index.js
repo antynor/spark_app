@@ -42,7 +42,33 @@ export default function Footer(){
                     
                     </div> 
                 </div>  
-                </div>  
+                </div> 
+                    <section className="SocialMedia">
+                        <div className="SocialMediaWrap">
+                            <LinkR to='/' className="SocialLogo">spark &nbsp; <i className="fas fa-car "/></LinkR>
+                        
+                        <small className="Rights">spark © 2021 All rights reserved. </small> 
+                        <div className='SocialIcons'>
+                            <a href='/' target="_blank" aria-label="Facebook" className="SocialIconLink">
+                            <i className="fab fa-facebook-square"></i>
+                            </a>
+                            <a href='/' target="_blank" aria-label="Twitter" className="SocialIconLink">
+                            <i className="fab fa-twitter-square"></i>
+                            </a>
+                            <a href='/' target="_blank" aria-label="Instagram" className="SocialIconLink">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href='/' target="_blank" aria-label="Youtube" className="SocialIconLink">
+                            <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href='/' target="_blank" aria-label="LinkedIn" className="SocialIconLink">
+                            <i class="fab fa-linkedin"></i>
+                            </a>
+
+
+                        </div>
+                        </div>
+                    </section> 
             </div>
        </div>
     )
